@@ -1,1 +1,2 @@
-# UGentWorkshop
+# Angular 2 workshop
+
