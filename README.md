@@ -20,18 +20,18 @@ is a good free alternative. For this workshop we will not use a backend technolo
 
 Remark: If you are behind a corporate proxy, you might need to configure your proxy for npm and git.
 
-You might try it by setting system environment variables or configure it for both programs separately ((of course, leave out user/pasword if the proxies are not authenticated)), 
+You might try it by setting system environment variables or configure it for both programs separately (of course, leave out user/pasword if the proxies are not authenticated), 
 see [http://digitaldrummerj.me/proxy-configurations/](http://digitaldrummerj.me/proxy-configurations/)
 
 NPM: 
 
-`npm config set https-proxy http://[user:password@][proxy-url]`      
-`npm config set proxy http://[user:password@][proxy-url]`
+`npm config set https-proxy http://[user:password@][proxy-url-including-port]`      
+`npm config set proxy http://[user:password@][proxy-url-including-port]`
 
 GIT
 
-`git config --add http.proxy http://[user:password@][proxy-url]`
-`git config --add https.proxy http://[user:password@][proxy-url]`
+`git config --add http.proxy http://[user:password@][proxy-url-including-port]`  
+`git config --add https.proxy http://[user:password@][proxy-url-including-port]`
 
 If you set them as system environment variables, you should try HTTP_PROXY and HTTPS_PROXY as variable names but this might not work on all system.    
     
