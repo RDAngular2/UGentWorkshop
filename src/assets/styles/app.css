@@ -24,6 +24,12 @@ img.navbar-brand {
     padding-right: 25px;
 }
 
+.navbar .fa-search {
+    font-size: 18px;
+    color: #999999;
+    cursor: hand;
+
+}
 
 .d-inline-block {
     display: inline-block;

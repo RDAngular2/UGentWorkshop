@@ -1,21 +1,23 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
     moduleId: module.id,
     selector: 'application-header',
-    templateUrl: 'application-header.component.html'
+    templateUrl: 'application-header.html'
 })
 export class ApplicationHeaderComponent implements OnInit {
 
-    /* If you want that other components be able to set this property, you need to add it to the public api by using the Input annotation*/
+    @Input()
+    applicationName : string = "!!! dummy application name !!!";
 
-    applicationName : string = "!!! dummy value !!!";
+    @Output()
+    onSearch : EventEmitter<string> = new EventEmitter<string>();
 
     constructor() { }
 
-    loginUser(event:MouseEvent) {
-        console.log("Login button clicked:\n" + event);
-        alert("Login functionality is not implemented yet.");
+    search(searchString:string) {
+        console.log("Search button clicked:\n" + event);
+        this.onSearch.next(searchString);
     }
 
     ngOnInit() {

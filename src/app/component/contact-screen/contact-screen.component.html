@@ -1,0 +1,22 @@
+<div class="container-fluid">
+
+    <!-- TODO: deal with contactChange output -->
+
+    <div class="col-xs-3">
+        <contact-list-viewer [selected]="contact" >
+        </contact-list-viewer>
+    </div>
+
+
+    <div>
+        <!-- This makes use of the json Pipe to display the contact object as a string -->
+        {{contact | json}}
+    </div>
+
+    <!--div class="col-xs-9">
+        <contact-editor [contact]="contact" *ngIf="contact != null"
+                        (contactDetailAction)="onContactDetailAction($event)" >
+        </contact-editor>
+    </div-->
+
+</div>

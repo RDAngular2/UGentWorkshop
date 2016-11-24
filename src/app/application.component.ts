@@ -9,4 +9,5 @@ export class ApplicationComponent  {
 
    name : string = "Angular 2 Workshop";
 
+
 }

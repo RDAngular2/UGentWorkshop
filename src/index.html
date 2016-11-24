@@ -21,7 +21,10 @@
     <script src="system-config.js"></script>
     
     <script>
+      // Use this import if we work without routing, otherwise put it in comments -->
       System.import('app/main').catch(function(err){ console.error(err); });
+      // Use this import if we work with routing, otherwise put it in comments -->
+      //System.import('app/with-routing/main-with-routing').catch(function(err){ console.error(err); });
     </script>
 
   </head>
